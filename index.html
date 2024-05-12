@@ -18,7 +18,7 @@
             <li><a href="#">Ozgecmisim</a></li>
             <li><a href="#">Sehrim</a></li>
             <li><a href="#">Mirasimiz</a></li>
-            <li><a href="#">Giris</a></li>
+            <li><a href="login.html">Giriş</a></li>
             <li><a href="#">Iletisim</a></li>
         </ul>
     </nav>
@@ -28,11 +28,44 @@
             <h2>Hakkımda</h2>
             <p>Benim adım Gulnur ve bu benim web sitem!</p>
         </section>
+
+       
+        <section>
+            <h2>Giriş Yap</h2>
+            <form action="login.php" method="post" onsubmit="return validateForm()">
+                <label for="username">Kullanıcı Adı (Öğrenci Numarası):</label><br>
+                <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"><br><br>
+                <label for="password">Şifre:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Giriş">
+            </form>
+        </section>
     </main>
 
     <footer>
         <p> Benim Web Sitem</p>
     </footer>
 
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username.trim() === "" || password.trim() === "") {
+                alert("Kullanıcı adı ve şifre alanlarını doldurunuz");
+                return false;
+            }
+
+        
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(username)) {
+                alert("Geçerli bir e-posta adresi giriniz");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
+
