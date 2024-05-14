@@ -1,62 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Sitem</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Glofia</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
     <header>
-        <h1>Hoş Geldiniz!</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">☆Gulnur Naghiyeva☆</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#ana-menu" >Ana Menü</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ozgecmisim">Özgeçmişim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sehrim">Şehrim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mirasimiz">Mirasımız</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ilgi-alanlarim">İlgi Alanlarım</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#giris">Giriş</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#iletisim" target="_blank">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Anasayfa</a></li>
-            <li><a href="ozgecmis.html">Özgeçmişim</a></li>
-            <li><a href="#">Şehrim</a></li>
-            <li><a href="#">Mirasımız</a></li>
-            <li><a href="login.html">Giriş</a></li>
-            <li><a href="#">İletişim</a></li>
-        </ul>
-    </nav>
+   <p>  </p>
 
-    <main>
-        <section>
-            <h2>Hakkımda</h2>
-            <p>Benim adım Gulnur ve bu benim web sitem!</p>
-        </section>
-
-        <section>
-            <h2>Giriş Yap</h2>
-            <form action="login.php" method="post" onsubmit="return validateForm()">
-                <label for="username">Kullanıcı Adı (E-posta):</label><br>
-                <input type="email" id="username" name="username" required><br><br>
-                <label for="password">Şifre:</label><br>
-                <input type="password" id="password" name="password" required><br><br>
-                <input type="submit" value="Giriş">
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p> Benim Web Sitem</p>
-    </footer>
-
-    <script>
-        function validateForm() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            if (username.trim() === "" || password.trim() === "") {
-                alert("Kullanıcı adı ve şifre alanlarını doldurunuz");
-                return false;
-            }
-
-            return true;
-        }
-    </script>
 </body>
 </html>
