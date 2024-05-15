@@ -1,9 +1,11 @@
-/* style.css */
+
 
 nav {
-    background-color: pink;
+    background-color: #990011
 }
-
+.custom-navbar {
+    background-color: ; /* Burada kendi istediğiniz hexadecimal renk kodunu kullanın */
+}
 nav ul {
     list-style-type: none;
     margin: 0;
