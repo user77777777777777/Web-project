@@ -1,40 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Proje</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Ana Sayfa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        .hobi {
+            margin-bottom: 20px;
+        }
+        .hobi img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #608cc2;">
-
-        <div class="container">
-    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#ana-menu" >Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ozgecmisim.html">Özgeçmişim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mirasimiz">Mirasımız</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ilgi-alanlarim">İlgi Alanlarım</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#giris">Giriş</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#iletisim" target="_blank">İletişim</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-
-
 <body>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #C8A2C8;">
+  <a class="navbar-brand" href="#">Web Sitem</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Ana Sayfa <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sehrim.html">Şehrim</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Giriş</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="iletisim.html">İletişim</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Merhaba, Ben Gulnur Naghiyeva</h1>
+        <p class="lead">Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.</p>
+        <hr class="my-4">
+        <p>Bu köşede, hobilerim ve ilgi alanlarım hakkında bazı şeyler paylaşacağım. </p>
+    </div>
+
+    <div class="hobi">
+        <h2>Piyano Çalmak</h2>
+        <p>
+             Piyano çalmak, benim için bir tutku ve duygularımı
+             ifade etmenin en güzel yolu. Çocukluğumdan beri tuşlara 
+             dokunmanın verdiği huzur ve melodilerin yarattığı mutluluk
+              beni hep cezbetmiştir. Her oturduğumda, yeni bir şeyler öğrenmenin
+               ve kendimi ifade etmenin keyfini yaşarım. Piyano, benim için sadece
+                bir enstrüman değil, ruhumun bir parçasıdır.
+            </p>
+        <img src="piyano.jpg" alt="Piyano Çalmak">
+
+    </div>
+    <div class="hobi">
+        <h2>Resim Çizmek</h2>
+        <img src="resim.jpg" alt="Resim Çizmek">
+    </div>
+    <div class="hobi">
+        <h2>Kitap Okumak</h2>
+        <img src="kitap.jpg" alt="Kitap Okumak">
+    </div>
+    <div class="hobi">
+        <h2>Müzik Dinlemek</h2>
+        <img src="muzik.jpg" alt="Müzik Dinlemek">
+    </div>
+</div>
+
+<!-- Bootstrap JS ve jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
