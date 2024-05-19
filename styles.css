@@ -1,53 +1,231 @@
-
-.jumbotron{
-    background-color: pink;
-}
-.body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+    padding-top: 60px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0FFF0;
 }
 
-header {
-    background-color: #080a5d;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+.navbar{
+    background-color: #6D4C41;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav {
-    background-color: #9e0e0e;
+.jumbotron {
+    background-color:   #8D6E63;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color:white;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.hobi img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out,
+     box-shadow 0.2s ease-in-out;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li a:hover {
-    color: #666666;
-}
 
-main {
-    padding: 20px;
-    background-color: #f0f2f5;
-    color: #333333;
-}
 
-footer {
-    background-color: #4a4e69;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
+body {
+    padding-top: 60px;
 } 
+
+
+/*Hobies*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.hobby {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.hobby:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hobby img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Sabit genişlik ayarı */
+}
+.hobby-text {
+    padding: 15px;
+    flex: 1;
+    color:  #006400;
+}
+.hobby-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.hobby-description {
+    font-size: 0.9em;
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0FFF0;
+}
+
+.navbar {
+    background-color: #6c757d;
+}
+
+
+/* Şehrim Sayfası Özel Stilleri */
+.sehrim-jumbotron {
+    background-color: #8D6E63;
+    color: #fff;
+    padding: 60px;
+    margin-bottom: 0;
+}
+
+.sehrim-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sehrim-slider {
+    margin-bottom: 30px;
+}
+
+.sehrim-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.azerbaycan-info {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.azerbaycan-info h2 {
+    color: #333;
+}
+
+.azerbaycan-info p {
+    color: #555;
+    font-size: 18px;
+}
+
+.azerbaycan-slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.azerbaycan-slider {
+    display: flex;
+    width: 100%;
+}
+
+.azerbaycan-slider div {
+    flex: 0 0 auto;
+}
+
+.azerbaycan-slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+.azerbaycan-info {
+    position: fixed; /* İçeriği sabitlemek için */
+    top: 50%; /* Yüksekliği yatay merkezde olacak şekilde ayarlayın */
+    left: 50%; /* Genişliği dikey merkezde olacak şekilde ayarlayın */
+    transform: translate(-50%, -50%); /* Merkeze hizalamak için */
+    width: 80%; /* İçeriğin genişliği */
+    max-width: 600px; /* Maksimum genişlik */
+    padding: 20px; /* İçerik etrafındaki boşluk */
+    background-color: rgba(255, 255, 255, 0.9); /* Arkaplan rengi */
+    border-radius: 10px; /* Kenar yumuşatma */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge */
+    z-index: 999; /* Diğer öğelerin üzerinde görüntülenmesini sağlamak için */
+}
+
+.slider-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #6D4C41;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #5D4037;
+}
+.slick-prev,
+.slick-next {
+    top: auto;
+    bottom: -50px; /* İstenilen değeri ayarlayabilirsiniz */
+}
+.sehrim-slider img {
+    border-radius: 8px; /* Kenarları yuvarlar */
+    border: 2px solid #ddd; /* Gri renkte 2 piksel kalınlığında bir çerçeve ekler */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti ekler */
+}
+
+
+
+body.background-image {
+    background-image: url('images/background-img.jpeg'); /* Arka plan resminin URL'si */
+    background-size: cover; /* Resmin ekranı kaplamasını sağlar */
+    background-position: center; /* Resmin ortalanmasını sağlar */
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-form {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.submit-button {
+    background-color:  #6D4C41;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+

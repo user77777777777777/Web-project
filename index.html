@@ -6,32 +6,22 @@
     <title>Ana Sayfa</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <!-- Custom CSS -->
-    <style>
-        body {
-            padding-top: 60px;
-        }
-        .hobi {
-            margin-bottom: 20px;
-        }
-        .hobi img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #C8A2C8;">
-  <a class="navbar-brand" href="#">Web Sitem</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"  style="background-color: #6D4C41;">
+  <a class="navbar-brand" href="#">☆☆☆☆☆☆☆</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Ana Sayfa <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Hakkımda <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
@@ -48,52 +38,71 @@
       <li class="nav-item">
         <a class="nav-link" href="login.html">Giriş</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="iletisim.html">İletişim</a>
-      </li>
+      
     </ul>
   </div>
 </nav>
 
 <div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Merhaba, Ben Gulnur Naghiyeva</h1>
+    <div class="jumbotron text-center">
+        <h2 class="display-4">Gulnur Naghiyeva</h2>
         <p class="lead">Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.</p>
         <hr class="my-4">
         <p>Bu köşede, hobilerim ve ilgi alanlarım hakkında bazı şeyler paylaşacağım. </p>
     </div>
 
-    <div class="hobi">
-        <h2>Piyano Çalmak</h2>
-        <p>
-             Piyano çalmak, benim için bir tutku ve duygularımı
-             ifade etmenin en güzel yolu. Çocukluğumdan beri tuşlara 
-             dokunmanın verdiği huzur ve melodilerin yarattığı mutluluk
-              beni hep cezbetmiştir. Her oturduğumda, yeni bir şeyler öğrenmenin
-               ve kendimi ifade etmenin keyfini yaşarım. Piyano, benim için sadece
-                bir enstrüman değil, ruhumun bir parçasıdır.
-            </p>
-        <img src="piyano.jpg" alt="Piyano Çalmak">
-
-    </div>
-    <div class="hobi">
-        <h2>Resim Çizmek</h2>
-        <img src="resim.jpg" alt="Resim Çizmek">
-    </div>
-    <div class="hobi">
-        <h2>Kitap Okumak</h2>
-        <img src="kitap.jpg" alt="Kitap Okumak">
-    </div>
-    <div class="hobi">
-        <h2>Müzik Dinlemek</h2>
-        <img src="muzik.jpg" alt="Müzik Dinlemek">
-    </div>
+    <div class="hobbies">
+      <div class="hobby">
+          <img src="images/piano.jpeg" alt="Piyano Çalmak">
+          <div class="hobby-text">
+              <h4 class="hobby-title">Piyano Çalmak</h4>
+              <p class="hobby-description">
+                  Piyano çalmayı sevmekten ve bunu küçük yaşlarımdan beri yapmaktan gerçekten mutluyum. 
+                  Müziği dinlemek harika bir deneyim olsa da, kendi ellerimle çaldığımda bu deneyim benim 
+                  için daha da özel hale geliyor. Piyano, duygularımı ifade etmenin bir yolu ve aynı zamanda
+                   içsel bir rahatlama kaynağı benim için. Özellikle <a href="https://tr.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart">Mozart</a>,
+                    <a href="https://tr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin">Chopin</a>,
+                     <a href="https://tr.wikipedia.org/wiki/Ludwig_van_Beethoven">Beethoven</a>,
+                      ve <a href="https://tr.wikipedia.org/wiki/Erik_Satie">Satie</a> 
+                      gibi ustaların eserlerini çalmak, beni gerçekten derinden etkiliyor. Onların müziğiyle etkileşime geçmek,
+                       benim için bir nevi meditasyon gibidir, ruhumu besler.
+              </p>
+          </div>
+      </div>
+      <div class="hobby">
+          <img src="images/drawing.jpg" alt="Resim Çizmek">
+          <div class="hobby-text">
+              <h4 class="hobby-title">Resim Çizmek</h4>
+              <p class="hobby-description">
+                  Resim çizmek benim için profesyonel bir uğraş değil, sadece bir hobi. Okulda resim eğitimi almadım, ancak çizmeyi sevmemin nedeni, sadece kendimi ifade etmenin ve duygularımı dışa vurmanın bir yolu olması. Becerilerim konusunda iddialı değilim, ama çizmeyi seviyorum çünkü müzik eşliğinde yapıyorum genellikle. Zaman zaman iyi hissetmediğimde veya zihnimde karmaşık düşünceler olduğunda, bir şeyler karalamak beni rahatlatıyor ve içsel huzuru bulmama yardımcı oluyor.
+              </p>
+          </div>
+      </div>
+      <div class="hobby">
+          <img src="images/reading-book.png" alt="Kitap Okumak">
+          <div class="hobby-text">
+              <h4 class="hobby-title">Kitap Okumak</h4>
+              <p class="hobby-description">
+                  Kitap okumak benim için gerçekten özel bir deneyim. Kitaplar, beni başka bir dünyaya götürüyor ve kendimi karakterlerin yaşadığı maceraların içinde buluyorum. Kitap okumayı sevmemin en sevdiğim yanlarından biri, herkesin aynı karakterleri farklı şekillerde canlandırması ve hikayeleri kendi zihinlerinde farklı şekillerde hayal etmesidir. Bu, kitap okumanın film izlemekten farklı olduğu bir nokta benim için. Kitap okumak, hayal gücümü genişletmenin ve kelime dağarcığımı geliştirmenin bir yolu olduğu gibi, aynı zamanda kendimi farklı kültürlerin ve düşünce tarzlarının içinde bulmamı sağlıyor. En çok polisiye romanları seviyorum, çünkü gizem ve heyecan dolu hikayeler beni her zaman etkilemiştir. Dünya klasikleri arasından en sevdiğim kitabı seçmek zor, ancak <strong>Suç ve Ceza, Notre Dame’ın Kamburu, Ana, İki Şehrin Hikayesi</strong> gibi başyapıtları örnek gösterebilirim.
+              </p>
+          </div>
+      </div>
+      <div class="hobby">
+          <img src="images/music.jpeg" alt="Müzik Dinlemek">
+          <div class="hobby-text">
+              <h4 class="hobby-title">Müzik Dinlemek</h4>
+              <p class="hobby-description">
+                  Müzik dinlemek benim için vazgeçilmez bir tutku. Müzik, ruh halime göre değişen bir terapi gibi. Her tür müziğin bana farklı duygular yaşatmasını seviyorum. Bazen enerjik bir pop şarkısı beni neşelendirirken, bazen klasik bir parça beni sakinleştiriyor ve derin düşüncelere dalmamı sağlıyor. Müziğin en güzel yanlarından biri, her insanın kendi deneyimlerine ve duygularına göre farklı anlamlar çıkarabilmesi. Farklı türdeki müzikler dinlemek, dünyaya farklı pencerelerden bakmamı sağlıyor ve hayal gücümü genişletiyor. Müzik dinlerken, çoğu zaman kendimi tamamen kaybediyor ve ritmin içinde kayboluyorum. Bu, benim için hem bir eğlence hem de bir kaçış yolu.
+              </p>
+          </div>
+      </div>
+  </div>
 </div>
 
-<!-- Bootstrap JS ve jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

@@ -1,7 +1,61 @@
-<form action="login.php" method="post">
-    <label for="username">Kullanıcı Adı:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
-    <label for="password">Şifre:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
-    <input type="submit" value="Giriş">
-</form>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background-image">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"  style="background-color: #6D4C41;">
+  <a class="navbar-brand" href="#">☆☆☆☆☆☆☆</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Hakkımda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sehrim.html">Şehrim</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.html">Giriş<span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+
+    <div class="login-form-container">
+        <form class="login-form" method="post" action="login.php">
+            <h2>Giriş Yap</h2>
+            <label for="username">Kullanıcı Adı (Öğrenci Numarası):</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="password">Şifre:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" class="submit-button" value="Giriş Yap">
+        </form>
+    </div>
+
+    
+</body>
+</html>
